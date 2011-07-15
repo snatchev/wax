@@ -7,9 +7,9 @@ function aClassMethod()
   return "yes"
 end
 
-function isEqual(class, other)
-  return class.super:isEqual(other)
-end
+--function isEqual(class, other)
+--  return class.super:isEqual(other)
+--end
 
 function returnsWhatYouSendIn(class, a, b, c)
   return a, b, c

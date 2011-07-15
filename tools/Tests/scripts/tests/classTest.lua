@@ -135,6 +135,10 @@ describe["A WaxClass with an WaxClass Super"] = function()
   before = function()
   end
   
+  it["returns the class's superclass"] = function()
+    expect(Bambi.super).should_equal(Deer)
+  end
+
   it["can call method defined in it's superclass"] = function()
     local result = Bambi:aClassMethod()
     expect(result).should_be("yes")
